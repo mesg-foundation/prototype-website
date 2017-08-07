@@ -33,7 +33,7 @@ export default {
       type: Boolean,
       default: false
     },
-    dark: {
+    light: {
       type: Boolean,
       default: false
     },
@@ -47,7 +47,7 @@ export default {
       return {
         'button--primary': this.primary,
         'button--secondary': this.secondary,
-        'button--dark': this.dark,
+        'button--light': this.light,
         'button--block': this.block
       }
     }
@@ -60,13 +60,15 @@ export default {
     display: inline-block;
     border-radius: .25em;
     text-decoration: none;
+    text-transform: uppercase;
     padding: .75em 1em;
     margin: 1em;
-    color: var(--text-light-color);
+    color: rgb(var(--text-color));
+    transition: all 300ms;
   }
 
-  .button--dark {
-    color: var(--text-dark-color);
+  .button--light {
+    color: white;
   }
 
   .button--block {
@@ -74,20 +76,22 @@ export default {
   }
 
   .button--primary {
-    border: 1px solid var(--primary-color);
-    color: var(--primary-color);
+    border: 1px solid rgb(var(--primary-color));
+    background-color: rgb(var(--primary-color));
+    color: #fff;
   }
   .button--primary:hover {
-    color: #fff;
-    background-color: var(--primary-color);
+    background-color: transparent;
+    color: rgb(var(--primary-color));
   }
 
   .button--secondary {
-    border: 1px solid var(--secondary-color);
-    color: var(--secondary-color);
+    border: 1px solid rgb(var(--secondary-color));
+    background-color: rgb(var(--secondary-color));
+    color: #fff;
   }
   .button--secondary:hover {
-    color: #fff;
-    background-color: var(--secondary-color);
+    background-color: transparent;
+    color: rgb(var(--secondary-color));
   }
 </style>

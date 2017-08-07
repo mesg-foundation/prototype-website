@@ -1,8 +1,8 @@
 <template>
   <Hero full-page>
     <div>
-      <Headline>etherstellar.io</Headline>
-      <Subhead>Etherstellar.io website</Subhead>
+      <Headline class="text--white">etherstellar.io</Headline>
+      <Subhead class="text--white">Etherstellar.io website</Subhead>
       <div class="links">
         <Btn
           href="https://nuxtjs.org/"
@@ -37,5 +37,8 @@ export default {
 <style scoped>
   h1 {
     font-size: 100px;
+  }
+  .text--white {
+    color: #fff;
   }
 </style>
