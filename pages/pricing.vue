@@ -3,9 +3,9 @@
     <Hero class="header" title="Pricing">
       <Layout row class="price-table">
         <Plan
-          v-for="(plan, i) in payablePlans" :key="plan.id"
-          :plan="plan"
-          :highlight="i === 1">
+          class="plan"
+          v-for="plan in payablePlans" :key="plan.id"
+          :plan="plan">
         </Plan>
       </Layout>
     </Hero>
@@ -65,5 +65,9 @@ export default {
   }
   .price-table {
     transform: translateY(3em);
+  }
+  .plan:nth-child(2) {
+    z-index: 1;
+    transform: scale(1.1);
   }
 </style>

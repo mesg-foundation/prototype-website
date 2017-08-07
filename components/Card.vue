@@ -1,27 +1,8 @@
 <template>
-  <section :class="classes">
+  <section>
     <slot></slot>
   </section>
 </template>
-
-<script>
-export default {
-  props: {
-    highlight: {
-      type: Boolean,
-      default: false
-    }
-  },
-  computed: {
-    classes () {
-      return {
-        'card--highlight': this.highlight
-      }
-    }
-  }
-}
-</script>
-
 
 <style scoped>
   section {
@@ -32,10 +13,5 @@ export default {
     margin: .5em;
     padding: 40px;
     font-size: 13px;
-  }
-
-  .card--highlight {
-    z-index: 1;
-    transform: scale(1.1);
   }
 </style>

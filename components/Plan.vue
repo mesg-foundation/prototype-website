@@ -1,6 +1,5 @@
 <template>
   <Card
-    :highlight="highlight"
     flex justify-center align-center>
     <CardTitle>{{ plan.title }}</CardTitle>
     <Layout :column="!row" :row="row">
@@ -33,10 +32,6 @@ export default {
     plan: {
       type: Object,
       required: true
-    },
-    highlight: {
-      type: Boolean,
-      default: false
     },
     row: {
       type: Boolean,
