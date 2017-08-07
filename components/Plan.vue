@@ -47,12 +47,14 @@ export default {
 </script>
 
 <style scoped>
+  section {
+    min-width: 20em;
+  }
   .price {
     display: block;
     font-weight: 300;
-    letter-spacing: -2.7px;
     font-size: 3.5em;
-    padding: 16px 0 32px;
+    margin-bottom: .75em;
     color: rgb(var(--primary-color));
   }
   .price small {
