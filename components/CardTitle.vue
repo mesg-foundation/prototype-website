@@ -1,9 +1,9 @@
 <template>
-  <h4><slot></slot></h4>
+  <h3><slot></slot></h3>
 </template>
 
 <style scoped>
-h4 {
+h3 {
   font-weight: 700;
   letter-spacing: 4px;
   line-height: 1;
