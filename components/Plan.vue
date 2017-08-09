@@ -9,7 +9,10 @@
         <li><strong>{{ plan.contracts || 'unlimited' }}</strong> contracts</li>
         <li><strong>{{ plan.members || 'unlimited' }}</strong> team members</li>
       </ul>
-      <BuyButton v-if="!row" primary :planId="plan.id">
+      <BuyButton
+        v-if="!row"
+        primary
+        :planId="plan.id">
         Start
       </BuyButton>
     </Layout>

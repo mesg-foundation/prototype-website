@@ -5,23 +5,22 @@
         <strong class="title">Ready to get started ?</strong>
         <p>Connect your Ethereum application now</p>
       </Layout>
-      <Btn
-        primary
-        href="https://dashboard.etherstellar.io/signup">
+      <BuyButton
+        primary>
         Create a free account
-      </Btn>
+      </BuyButton>
     </Layout>
   </div>
 </template>
 
 <script>
 import Layout from '~/components/Layout'
-import Btn from '~/components/Btn'
+import BuyButton from '~/components/BuyButton'
 import Subhead from '~/components/Subhead'
 export default {
   components: {
     Layout,
-    Btn,
+    BuyButton,
     Subhead
   }
 }

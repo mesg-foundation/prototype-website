@@ -1,5 +1,5 @@
 <template>
-  <Btn primary block :href="href">
+  <Btn v-bind="$attrs" :href="href">
     <slot></slot>
   </Btn>
 </template>
@@ -13,12 +13,15 @@ export default {
   props: {
     planId: {
       type: String,
-      required: true
+      default: null
     }
   },
   computed: {
+    url () {
+      return 'https://dashboard.etherstellar.io/signup'
+    },
     href () {
-      return `https://dashboard.etherstellar.io/signup?planId=${this.planId}`
+      return this.planId ? [this.url, `planId=${this.planId}`].join('?') : this.url
     }
   }
 }

@@ -1,35 +1,31 @@
 <template>
   <Hero full-page>
-    <div>
-      <Headline class="text--white">etherstellar.io</Headline>
-      <Subhead class="text--white">Etherstellar.io website</Subhead>
-      <div class="links">
-        <Btn
-          href="https://nuxtjs.org/"
-          primary>
-          Documentation
-        </Btn>
-        <Btn
-          href="https://github.com/nuxt/nuxt.js"
-          secondary>
-          GitHub
-        </Btn>
-      </div>
-    </div>
+    <Layout>
+      <Headline>
+        <img src="~/assets/logo.svg" alt="Logo Etherestellar">
+      </Headline>
+      <Subhead class="text--white">Connect Ethereum to the rest of the world</Subhead>
+      <BuyButton
+        primary>
+        Get started for free
+      </BuyButton>
+    </Layout>
   </Hero>
 </template>
 
 <script>
-import Btn from '~/components/Btn'
+import BuyButton from '~/components/BuyButton'
 import Hero from '~/components/Hero'
 import Headline from '~/components/Headline'
 import Subhead from '~/components/Subhead'
+import Layout from '~/components/Layout'
 export default {
   components: {
-    Btn,
+    BuyButton,
     Hero,
     Headline,
-    Subhead
+    Subhead,
+    Layout
   }
 }
 </script>
