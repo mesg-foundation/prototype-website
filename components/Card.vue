@@ -1,8 +1,20 @@
 <template>
-  <section>
+  <section :class="{ hover }">
     <slot></slot>
   </section>
 </template>
+
+<script>
+export default {
+  props: {
+    hover: {
+      type: Boolean,
+      default: false
+    }
+  }
+}
+</script>
+
 
 <style scoped>
   section {
@@ -13,5 +25,12 @@
     margin: .5em;
     padding: 40px;
     font-size: 13px;
+  }
+  section.hover {
+    transition: all 300ms;
+  }
+  section.hover:hover {
+    box-shadow: 0 20px 60px rgba(0,0,0,.08);
+    transform: translateY(-.2em);
   }
 </style>
