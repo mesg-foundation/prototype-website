@@ -3,8 +3,9 @@
     <Headline>
       <Logo></Logo>
     </Headline>
-    <Subhead class="mb-2 text--white">Connect Ethereum blockchain to the world</Subhead>
+    <Subhead class="subhead mb-2 text--white">Connect Ethereum blockchain to the world</Subhead>
     <BuyButton
+      class="action"
       primary>
       Get started now for free !
     </BuyButton>
@@ -29,7 +30,19 @@ export default {
 </script>
 
 <style scoped>
-img {
-  height: 5em;
+.subhead {
+  animation: show 1s ease-in-out;
+  animation-fill-mode: both;
+  animation-delay: 2s;
+}
+
+.action {
+  animation: show 1s ease-in-out;
+  animation-fill-mode: both;
+  animation-delay: 3s;
+}
+
+@keyframes show {
+  0% { opacity: 0; transform: translateY(-.2em); }
 }
 </style>
