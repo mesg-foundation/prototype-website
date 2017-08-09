@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <Headline>
-      <img src="~/assets/logo.svg" alt="Logo Etherestellar">
+      <Logo></Logo>
     </Headline>
     <Subhead class="mb-2 text--white">Connect Ethereum blockchain to the world</Subhead>
     <BuyButton
@@ -12,12 +12,14 @@
 </template>
 
 <script>
+import Logo from '~/components/Logo'
 import BuyButton from '~/components/BuyButton'
 import Headline from '~/components/Headline'
 import Subhead from '~/components/Subhead'
 import Layout from '~/components/Layout'
 export default {
   components: {
+    Logo,
     BuyButton,
     Headline,
     Subhead,
