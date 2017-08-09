@@ -93,4 +93,8 @@ p {
 .pa-1 { padding: 1rem; } .pl-1 { padding-left: 1rem; } .pr-1 { padding-right: 1rem; } .pt-1 { padding-top: 1rem; } .pb-1 { padding-bottom: 1rem; }
 .pa-2 { padding: 2rem; } .pl-2 { padding-left: 2rem; } .pr-2 { padding-right: 2rem; } .pt-2 { padding-top: 2rem; } .pb-2 { padding-bottom: 2rem; }
 .pa-3 { padding: 3rem; } .pl-3 { padding-left: 3rem; } .pr-3 { padding-right: 3rem; } .pt-3 { padding-top: 3rem; } .pb-3 { padding-bottom: 3rem; }
+
+.text--white { color: #fff!important; }
+.text--primary { color: rgb(var(--primary-color))!important; }
+.text--secondary { color: rgb(var(--secondary-color))!important; }
 </style>
