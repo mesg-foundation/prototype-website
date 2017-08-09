@@ -3,7 +3,7 @@
     <Headline>
       <img src="~/assets/logo.svg" alt="Logo Etherestellar">
     </Headline>
-    <Subhead class="mb-2 text--white">Connect Ethereum to the rest of the world</Subhead>
+    <Subhead class="mb-2 text--white">Connect Ethereum blockchain to the world</Subhead>
     <BuyButton
       primary>
       Get started now for free !
