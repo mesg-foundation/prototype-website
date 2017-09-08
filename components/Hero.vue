@@ -1,17 +1,21 @@
 <template>
-  <section
-    column align-center justify-center
-    class="text-center">
-    <Headline class="title" v-if="title">{{ title }}</Headline>
-    <slot></slot>
+  <section>
+    <Layout
+      column align-center justify-center
+      class="text-center">
+      <Headline class="title" v-if="title">{{ title }}</Headline>
+      <slot></slot>
+    </Layout>
   </section>
 </template>
 
 <script>
 import Headline from '@/components/Headline'
+import Layout from '@/components/Layout'
 export default {
   components: {
-    Headline
+    Headline,
+    Layout
   },
   props: {
     title: {

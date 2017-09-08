@@ -1,30 +1,17 @@
 <template>
-  <Layout>
-    <Card hover flex>
-      <CardTitle>
-        Ethereum Blockchain to Web
-      </CardTitle>
-      <Layout>
-        <p>Get notified by a <strong>webhook</strong> every time an <strong>Event</strong> occurs on <strong>Ethereum Blockchain</strong>.</p>
-        <p>Extend the possibilities of your <strong>Decentralized Application (DApp)</strong> with emails, sms, push notifications, invoice system and whatever external service you want to use</p>
-      </Layout>
-      <Btn class="ma-0 mt-2" to="/ethereum-to-web">see more</Btn>
-    </Card>
-    <!-- <img flex src="~/assets/features/ethereum-to-web.svg" alt="Ethereum Blockchain to Web"> -->
-  </Layout>
+  <Feature
+    title="Ethereum Blockchain to Web"
+    to="/ethereum-to-web">
+    <p>Get notified in <strong>Real Time</strong> when an <strong>Event</strong> occurs on <strong>Ethereum Blockchain</strong>.</p>
+    <p>Use this to connect any system you can think about (email, push notifications, invoice system...). We already include different services and if it's not enought you can anytime <strong>create your own</strong> directly from the <strong>powerfull dashboard</strong>.</p>
+  </Feature>
 </template>
 
 <script>
-import Btn from '@/components/Btn'
-import Card from '@/components/Card'
-import CardTitle from '@/components/CardTitle'
-import Layout from '@/components/Layout'
+import Feature from '@/components/Feature'
 export default {
   components: {
-    Btn,
-    Card,
-    CardTitle,
-    Layout
+    Feature
   }
 }
 </script>

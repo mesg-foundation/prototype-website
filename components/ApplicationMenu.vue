@@ -2,7 +2,6 @@
   <nav row>
     <Btn light to="/">Etherstellar</Btn>
     <span flex></span>
-    <Btn light to="/features">Features</Btn>
     <Btn light to="/pricing">Pricing</Btn>
     <Btn light primary href="https://dashboard.etherstellar.io">Go to dashboard</Btn>
   </nav>

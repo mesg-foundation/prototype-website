@@ -7,5 +7,6 @@
     font-weight: 300;
     font-size: 5em;
     letter-spacing: 1px;
+    line-height: 1.25em;
   }
 </style>

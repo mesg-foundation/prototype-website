@@ -6,7 +6,7 @@
 h3 {
   font-weight: 700;
   letter-spacing: 4px;
-  line-height: 1;
+  line-height: 2em;
   text-transform: uppercase;
   margin-bottom: 1.5em;
 }

@@ -4,7 +4,7 @@
       <HomePageHeader></HomePageHeader>
     </Hero>
     <Goal class="mb-3"></Goal>
-    <FeatureList></FeatureList>
+    <FeatureList class="features"></FeatureList>
   </div>
 </template>
 

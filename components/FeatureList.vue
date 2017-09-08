@@ -4,7 +4,6 @@
 
     <component row
       v-for="(feature, i) in features" :key="feature.key"
-      class="mb-3 mt-3"
       :class="{ reverse: i % 2 === 1 }"
       :is="feature">
     </component>
@@ -17,6 +16,7 @@ import Subhead from '@/components/Subhead'
 import EthereumToWeb from '@/components/features/EthereumToWeb'
 import WebToEthereum from '@/components/features/WebToEthereum'
 import EthereumNode from '@/components/features/EthereumNode'
+import ContractManagement from '@/components/features/ContractManagement'
 export default {
   components: {
     Layout,
@@ -25,6 +25,7 @@ export default {
   computed: {
     features () {
       return [
+        ContractManagement,
         EthereumToWeb,
         WebToEthereum,
         EthereumNode
