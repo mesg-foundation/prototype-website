@@ -35,5 +35,8 @@ module.exports = {
       }
     },
     vendor: ['axios']
-  }
+  },
+  css: [
+    { src: '~/assets/style/app.styl', lang: 'styl' }
+  ]
 }

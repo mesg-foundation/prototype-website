@@ -44,7 +44,8 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="stylus" scoped>
+  @require '~assets/style/variables'
   section {
     min-width: 20em;
   }
@@ -53,7 +54,7 @@ export default {
     font-weight: 300;
     font-size: 3.5em;
     margin-bottom: .75em;
-    color: rgb(var(--primary-color));
+    color: $colors.primary;
   }
   .price small {
     font-size: .5em;

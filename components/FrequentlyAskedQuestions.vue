@@ -30,18 +30,19 @@ export default {
 }
 </script>
 
-<style>
-i::before {
-  content: '?';
-  display: inline-block;
-  width: 1.6em;
-  height: 1.6em;
-  border-radius: 50%;
-  line-height: 1.6em;
-  text-align: center;
-  font-style: normal;
-  color: rgb(var(--primary-color));
-  background: rgba(var(--primary-color), .25);
-  font-size: .75em;
-}
+<style lang="stylus" scoped>
+  @require '~assets/style/variables'
+  i::before {
+    content: '?';
+    display: inline-block;
+    width: 1.6em;
+    height: 1.6em;
+    border-radius: 50%;
+    line-height: 1.6em;
+    text-align: center;
+    font-style: normal;
+    color: $colors.primary;
+    background: alpha($colors.primary, 0.3);
+    font-size: .75em;
+  }
 </style>

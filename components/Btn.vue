@@ -55,7 +55,8 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="stylus" scoped>
+  @require '~assets/style/variables'
   a {
     display: inline-block;
     border-radius: .25em;
@@ -63,7 +64,7 @@ export default {
     text-transform: uppercase;
     padding: .75em 1em;
     margin: 1em;
-    color: rgb(var(--text-color));
+    color: $text-color;
     transition: all 300ms;
   }
 
@@ -76,22 +77,22 @@ export default {
   }
 
   .button--primary {
-    border: 1px solid rgb(var(--primary-color));
-    background-color: rgb(var(--primary-color));
+    border: 1px solid $colors.primary;
+    background-color: $colors.primary;
     color: #fff;
   }
   .button--primary:hover {
     background-color: transparent;
-    color: rgb(var(--primary-color));
+    color: $colors.primary;
   }
 
   .button--secondary {
-    border: 1px solid rgb(var(--secondary-color));
-    background-color: rgb(var(--secondary-color));
+    border: 1px solid $colors.secondary;
+    background-color: $colors.secondary;
     color: #fff;
   }
   .button--secondary:hover {
     background-color: transparent;
-    color: rgb(var(--secondary-color));
+    color: $colors.secondary;
   }
 </style>
