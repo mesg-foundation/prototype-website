@@ -26,11 +26,12 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="stylus" scoped>
+@require "~assets/style/variables"
 .get-started {
-  background: #f5f4f9;
+  background: $colors.white;
   padding: 3em 0;
-  border-top: solid 1px #eeeeee;
-  border-bottom: solid 1px #eeeeee;
+  border-top: solid 1px darken($colors.white, 10%);
+  border-bottom: solid 1px darken($colors.white, 10%);
 }
 </style>

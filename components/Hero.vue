@@ -22,7 +22,8 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="stylus" scoped>
+@require "~assets/style/variables"
 section {
   margin-bottom: 7em;
   position: relative;
@@ -37,7 +38,7 @@ section::before {
   bottom: 0;
   z-index: -1;
   transform: skewY(-5deg);
-  background: linear-gradient(to left top, #004e92, #000428);
+  background: linear-gradient(to left top, $colors.blue-light, $colors.blue-dark);
 
 }
 .title {

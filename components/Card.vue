@@ -16,9 +16,10 @@ export default {
 </script>
 
 
-<style scoped>
+<style lang="stylus" scoped>
+  @import "~assets/style/variables"
   section {
-    background: white;
+    background: $colors.white;
     box-shadow: 0 15px 45px rgba(0,0,0,.08);
     position: relative;
     border-radius: 6px;

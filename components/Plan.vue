@@ -1,8 +1,8 @@
 <template>
   <Card
     flex justify-center align-center>
-    <CardTitle>{{ plan.title }}</CardTitle>
     <Layout :column="!row" :row="row">
+      <CardTitle>{{ plan.title }}</CardTitle>
       <span class="price">${{ plan.price / 100 }} <small>/ mo</small></span>
       <ul flex>
         <li><strong>{{ plan.executions / 1000 + 'k' }}</strong> webhook executions per month</li>
@@ -11,7 +11,7 @@
       </ul>
       <BuyButton
         v-if="!row"
-        primary
+        primary class="ma-0"
         :planId="plan.id">
         Start
       </BuyButton>
