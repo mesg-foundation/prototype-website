@@ -1,13 +1,13 @@
 <template>
   <div>
     <Hero class="header" title="Pricing">
-      <!-- <Layout row class="price-table">
+      <Layout row class="price-table">
         <Plan
           class="plan"
           v-for="plan in payablePlans" :key="plan.id"
           :plan="plan">
         </Plan>
-      </Layout>-->
+      </Layout>
       <Layout>
         <Plan :plan="freePlan"></Plan>
       </Layout>
