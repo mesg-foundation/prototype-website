@@ -5,7 +5,7 @@
       <CardTitle>{{ plan.title }}</CardTitle>
       <span class="price">${{ plan.price / 100 }} <small>/ mo</small></span>
       <ul flex>
-        <li><strong>{{ plan.executions / 1000 + 'k' }}</strong> webhook executions per month</li>
+        <li><strong>{{ plan.executions || 'unlimited' }}</strong> webhook executions per month</li>
         <li><strong>{{ plan.contracts || 'unlimited' }}</strong> contracts</li>
         <li><strong>{{ plan.members || 'unlimited' }}</strong> team members</li>
       </ul>

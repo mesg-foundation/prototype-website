@@ -1,20 +1,17 @@
 <template>
   <div>
     <Hero class="header" title="Pricing">
-      <Layout row class="price-table">
+      <!-- <Layout row class="price-table">
         <Plan
           class="plan"
           v-for="plan in payablePlans" :key="plan.id"
           :plan="plan">
         </Plan>
+      </Layout>-->
+      <Layout>
+        <Plan :plan="freePlan"></Plan>
       </Layout>
     </Hero>
-    <Layout>
-      <Plan
-        :plan="freePlan"
-        row>
-      </Plan>
-    </Layout>
     <FrequentlyAskedQuestions
       class="mt-3 mb-3"
       :questions="questions">
