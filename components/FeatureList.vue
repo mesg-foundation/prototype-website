@@ -15,7 +15,6 @@ import Layout from '@/components/Layout'
 import Subhead from '@/components/Subhead'
 import EthereumToWeb from '@/components/features/EthereumToWeb'
 import WebToEthereum from '@/components/features/WebToEthereum'
-import EthereumNode from '@/components/features/EthereumNode'
 import ContractManagement from '@/components/features/ContractManagement'
 export default {
   components: {
@@ -27,8 +26,7 @@ export default {
       return [
         ContractManagement,
         EthereumToWeb,
-        WebToEthereum,
-        EthereumNode
+        WebToEthereum
       ]
     }
   }
