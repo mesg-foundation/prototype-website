@@ -1,6 +1,6 @@
 <template>
   <Layout row>
-    <Card class="mb-2" hover flex :style="style">
+    <Card hover flex :style="style">
       <CardTitle>
         {{ title }}
         <Tag v-if="commingSoon">Comming soon</Tag>
@@ -57,7 +57,8 @@ export default {
       return {
         backgroundImage: `url(${this.image})`,
         backgroundRepeat: 'no-repeat',
-        backgroundPosition: '100% 90px'
+        backgroundPosition: '100% 90px',
+        backgroundSize: 'contain'
       }
     }
   }

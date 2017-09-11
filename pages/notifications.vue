@@ -1,37 +1,42 @@
 <template>
   <section>
-    <Hero title="Ethereum to Web">
-      <Subhead class="text--white mb-4">
+    <Hero title="Blockchain Notifications"></Hero>
+    <Layout row>
+      <Subhead class="text-center mb-4">
         Execute any action you want in <strong>Real Time</strong> when your contract is executed.
       </Subhead>
-    </Hero>
-    <Layout>
-      <div class="text-center">
-      </div>
       <Feature
-        title="Powerfull Webhook system">
+        class="half"
+        title="Powerfull Webhook system"
+        :image="require('~/assets/webhook.svg')">
         <p>Send the data from your Ethereum event to any webhook and connect directly your application backend to every <strong>Ethereum event in a second</strong>.</p>
         <p>You have also access to all the log to quickly see when something went wrong on the webhook.</p>
         <p><strong>Security is important</strong> so you are free to set any kind of verification via <strong>Custom Headers</strong> you can so trigger your webhook as an authenticated user.</p>
       </Feature>
       <Feature
+        class="half"
         title="Custom functions"
-        imageLeft>
+        :image="require('~/assets/functions.svg')">
         <p>Sometime it's necessary to have a specific code running for a specific action.</p>
         <p>Create a backend is heavy to manage, with our <strong>Custom Functions</strong> you can quickly run a piece of code without having to worry of infrastructure, server management etc...</p>
       </Feature>
       <Feature
-        title="Slack notifications">
+        class="half"
+        title="Slack notifications"
+        :image="require('~/assets/slack.svg')">
         <p>Almost every team uses <strong>Slack</strong> and spend their day on this amazing tool so it make sense to be able to receive your <strong>Ethereum Event</strong> directly into the Slack channel of your choice and never miss an action on your contracts.</p>
       </Feature>
       <Feature
+        class="half"
         title="Email notifications"
-        imageLeft>
+        :image="require('~/assets/email.svg')">
         <p>Every application needs emails, how your application can run without any email notifications...</p>
         <p>You can now connect every <strong>Ethereum contracts</strong> to your <strong>Sendgrid</strong> account and start send emails</p>
         <p>With our custom template engine you can directly send the data of your contract into your emails</p>
       </Feature>
-      <p>and much more to come...</p>
+      <div class="text-center mt-2">
+        <p>and much more to come...</p>
+      </div>
     </Layout>
   </section>
 </template>
