@@ -73,5 +73,26 @@ p {
 .text--secondary { color: $colors.secondary!important; }
 
 .half {
-  width: 50%;
+  @media screen and (min-width: $breakpoints.desktop) {
+    width: 50%;
+  }
+}
+
+.tablet-and-up {
+  display: none!important;
+  @media screen and (min-width: $breakpoints.tablet) {
+    display: inherit!important;
+  }
+}
+
+.desktop-and-up {
+  display: none!important;
+  @media screen and (min-width: $breakpoints.desktop) {
+    display: inherit!important;
+  }
+}
+
+#app > section > .container {
+  padding-left: 1em;
+  padding-right: 1em;
 }

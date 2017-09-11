@@ -1,9 +1,9 @@
 <template>
   <Layout>
-    <Headline class="mt-4">
+    <Headline>
       <Logo noSpiral></Logo>
     </Headline>
-    <Subhead class="subhead mb-2 text--white">Interact easily with the Ethereum Blockchain</Subhead>
+    <Subhead class="subhead mb-2 text--white">Interact easily with Ethereum Blockchain</Subhead>
     <BuyButton
       class="action"
       primary>
@@ -29,7 +29,18 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="stylus" scoped>
+@import "~assets/style/variables"
+h1 {
+  margin-top: 3em;
+  @media screen and (min-width: $breakpoints.tablet) {
+    margin-top: 1em;
+  }
+  @media screen and (min-width: $breakpoints.desktop) {
+    margin-top: 0;
+  }
+}
+
 .subhead {
   animation: show 1s ease-in-out;
   animation-fill-mode: both;

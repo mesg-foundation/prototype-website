@@ -1,11 +1,11 @@
 <template>
-  <div>
+  <section>
     <Hero full-page>
       <HomePageHeader></HomePageHeader>
     </Hero>
     <Goal class="mb-3"></Goal>
     <FeatureList class="features"></FeatureList>
-  </div>
+  </section>
 </template>
 
 <script>

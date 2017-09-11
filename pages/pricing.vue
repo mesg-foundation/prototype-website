@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <section>
     <Hero class="header" title="Pricing">
       <p class="mb-3 text--white">We are now on beta and this service is provided for free until we ends the beta</p>
       <Layout row class="price-table">
@@ -17,7 +17,7 @@
       class="mt-3 mb-3"
       :questions="questions">
     </FrequentlyAskedQuestions>
-  </div>
+  </section>
 </template>
 
 <script>

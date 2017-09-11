@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="app">
     <ApplicationMenu></ApplicationMenu>
     <nuxt />
     <ApplicationFooter></ApplicationFooter>
