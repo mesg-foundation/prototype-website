@@ -1,9 +1,9 @@
 <template>
   <Layout>
-    <Headline>
-      <Logo></Logo>
+    <Headline class="mt-4">
+      <Logo noSpiral></Logo>
     </Headline>
-    <Subhead class="subhead mb-2 text--white">Connect Ethereum blockchain to the world</Subhead>
+    <Subhead class="subhead mb-2 text--white">Interact easily with the Ethereum Blockchain</Subhead>
     <BuyButton
       class="action"
       primary>

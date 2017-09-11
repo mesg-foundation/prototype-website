@@ -1,6 +1,6 @@
 <template>
   <Layout row>
-    <Card class="mb-2" hover flex>
+    <Card class="mb-2" hover flex :style="style">
       <CardTitle>
         {{ title }}
         <Tag v-if="commingSoon">Comming soon</Tag>
@@ -49,6 +49,16 @@ export default {
     commingSoon: {
       type: Boolean,
       default: false
+    }
+  },
+  computed: {
+    style () {
+      if (!this.image) { return {} }
+      return {
+        backgroundImage: `url(${this.image})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: '100% 90px'
+      }
     }
   }
 }

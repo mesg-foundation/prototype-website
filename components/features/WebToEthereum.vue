@@ -1,8 +1,8 @@
 <template>
   <Feature
-    title="Web to Ethereum Blockchain"
+    title="Blockchain actions"
     commingSoon>
-    <p>Simply call a classic <strong>API</strong> or use a <strong>webhook endpoint</strong> to send any data in your <strong>Ethereum contract</strong>.</p>
+    <p>Interact with the <strong>Ethereum Blockchain</strong> and call your contracts directly through a simple private API endpoint. Update your contract data is now as easy as call a simple endpoint</p>
   </Feature>
 </template>
 
