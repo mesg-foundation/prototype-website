@@ -1,7 +1,7 @@
 <template>
   <section>
     <Hero class="header" title="Pricing">
-      <p class="mb-3 text--white">We are now on beta and this service is provided for free until we ends the beta</p>
+      <p class="mb-3 text--white">We are now in beta and this service is provided for free until we end the beta</p>
       <Layout row class="price-table">
         <Plan
           class="plan"

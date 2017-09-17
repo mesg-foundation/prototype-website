@@ -3,7 +3,7 @@
     <Card hover flex :style="style">
       <CardTitle>
         {{ title }}
-        <Tag v-if="commingSoon">Comming soon</Tag>
+        <Tag v-if="comingSoon">Coming soon</Tag>
       </CardTitle>
       <Layout row>
         <div flex>
@@ -46,7 +46,7 @@ export default {
       type: Boolean,
       default: false
     },
-    commingSoon: {
+    comingSoon: {
       type: Boolean,
       default: false
     }
