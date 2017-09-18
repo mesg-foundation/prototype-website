@@ -11,6 +11,9 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ],
+    script: [
+      { src: '//d2wy8f7a9ursnm.cloudfront.net/bugsnag-3.min.js', 'data-apikey': '7baf6f286493a4a38826c4727ba422f1' }
     ]
   },
   /*
